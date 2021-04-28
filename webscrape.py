@@ -1,5 +1,5 @@
 import requests
-# import json
+import json
 
 url = "https://www.footballdb.com/fantasy-football/index.html?pos=QB%2CRB%2CWR%2CTE&yr=2020&wk=17&rules=1"
 yr = "2010"
@@ -19,7 +19,3 @@ for yr in range(2010, 2021):
 
 json_formatted_str = json.dumps(seasons, indent=4)
 print(json_formatted_str)
-
-from selenium import webdriver
-
-requests.get(url=url)
